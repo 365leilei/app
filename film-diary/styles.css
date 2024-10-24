@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+
+/*--------------------------------
+全体
+---------------------------------*/
+body {
+    font-family: Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo,
+    sans-serif;
+    font-size: 16px;
+    color: #333;
+    background: #E8E8E8;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ main {
+  margin: 70px 0;
+  min-height: 715px;
+
+ }
+  a {
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  h2 {
+    text-align: center;
+  }
+
+  a:hover {
+    opacity: 0.8;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+  }
+
+  a:hover {
+    opacity: .8;
+  }
+  /*--------------------------------
+ヘッダー
+---------------------------------*/
+/* ヘッダー全体のスタイル */
+/* ヘッダー全体のスタイル */
+.header {
+  display: flex; /* フレックスボックスで要素を横並びにする */
+  justify-content: space-between; /* 左右にスペースを空けて配置 */
+  align-items: center; /* 縦方向の中央に揃える */
+  padding: 10px 20px; /* ヘッダーに内側の余白を追加 */
+  background-color: #f8f8f8; /* 背景色を薄いグレーに設定 */
+  border-bottom: 1px solid #ddd; /* 下に境界線を追加 */
+  position: fixed; /* ヘッダーを画面の上部に固定 */
+  top: 0; /* 上部に固定 */
+  width: 100%; /* ヘッダーを画面いっぱいに広げる */
+  z-index: 1000; /* 他の要素の上に表示する */
+  box-sizing: border-box; /* パディングを含めたサイズを計算する */
+}
+
+/* ロゴ画像のスタイル */
+.logo-image {
+  height: 50px; /* 画像の高さを50pxに設定 */
+}
+
+/* ボタンのスタイル */
+.menu button {
+  padding: 10px 15px; /* ボタンの内側の余白を追加 */
+  margin-left: 10px; /* ボタン間にスペースを追加 */
+  background-color: #4CAF50; /* 緑色の背景色 */
+  color: white; /* 文字色を白に設定 */
+  border: none; /* 枠線を消す */
+  border-radius: 5px; /* ボタンの角を少し丸める */
+  cursor: pointer; /* マウスカーソルを指アイコンに変更 */
+}
+
+.menu button:hover {
+  background-color: #45a049; /* マウスを乗せたときのボタンの色を少し濃くする */
+}
+
+  /*--------------------------------
+フッター
+---------------------------------*/
+/* フッター全体のスタイル */
+/* フッター全体のスタイル */
+.footer {
+  background-color: #f8f8f8; /* フッターの背景色を薄いグレーに設定 */
+  padding: 20px 0; /* 上下に20pxのスペースを追加 */
+  text-align: center; /* 中央揃えにする */
+  border-top: 1px solid #ddd; /* 上に薄い境界線を追加 */
+  bottom: 0; /* 画面の一番下に配置 */
+  width: 100%; /* フッターを画面いっぱいに広げる */
+}
+
+/* コピーライトのスタイル */
+.copyright {
+  font-size: 14px; /* 文字サイズを14pxに設定 */
+  color: #555; /* 文字色を薄いグレーに設定 */
+}
+
+
+    /*--------------------------------
+レイアウト
+---------------------------------*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center; /* 子要素のテキストを中央寄せ */
+  padding: 30px 0;
+}
+.general-container {
+  width: 1200px;
+  /* 水平方向の中央揃え */
+  text-align: center; /* 子要素のテキストを中央寄せ */
+  margin: 0 auto;
+}
+
+.column-5 {
+  display: grid; /* グリッドレイアウトを使うよ！ */
+  grid-template-columns: repeat(5, 1fr); /* 3つの同じ幅の列を作る */
+  grid-gap: 10px; /* 各ボックスの間に10pxのスペースをあける */
+
+}
+
+/*--------------------------------
+メインビジュアル
+---------------------------------*/
+.main-visual {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-visual img {
+  width: 100%; /* 横幅を画面いっぱいに */
+  height: auto; /* 高さは画像のアスペクト比に合わせて自動調整 */
+  display: block; /* 隙間を消すためにblock表示 */
+}
+/*--------------------------------
+コンテンツ
+---------------------------------*/
+
+/*---ボタン---*/
+.button-contsiner {
+  width: 1200px;
+  margin: 20px 0;
+
+}
+
+.general-button {
+  margin: 0 auto;
+}
+
+/*---パネル---*/
+.panel-item {
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+}
+.panel-item img {
+  text-align: center;
+  height: 200px;
+  width: 150px;
+}
+
+/*---カルーセル---*/
+.carousel-container {
+  margin: 0 auto;
+  width: 800px;
+}
+
+.swiper-wrapper{
+  width: 300px;
+  max-height: 500px;
+}
+
+.swiper-wrapper img{
+  width: auto;
+  height: 350px;
+}
+
+.swiper-controls{
+   position: relative;
+   display: flex;
+   margin-top: 20px;
+   margin-bottom: 100px;
+}
+@media screen and (max-width: 599px){
+.swiper-controls{
+    margin-bottom: 0px;
+}
+}

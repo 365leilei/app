@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="jp">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新規登録 | Film Diary</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header Start -->
+    <header class="header">
+        <!-- 左端のロゴ画像 -->
+        <div class="logo">
+            <a href="/index.html"><img src="image/57x57.png" alt="ロゴ" class="logo-image"></a>
+        </div>
+
+    </header>
+    <!-- Header End -->
+
+    <main>
+        <div class="container">
+            <h1>新規登録</h1>
+            <div class="general-container">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h2>ユーザー名</h2>
+                            </td>
+                            <td>
+                                <form><input type="text"></form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>パスワード</h2>
+                            </td>
+                            <td>
+                                <form><input type="text"></form>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2>アイコン</h2>
+                            </td>
+                            <td>
+                                <form action="/upload" method="post" enctype="multipart/form-data">
+                                    <label for="file-upload"></label>
+                                    <input type="file" id="file-upload" name="uploaded-file" accept="image/*">
+                                    <input type="submit" value="アップロード">
+                                </form>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="button-contsiner">
+                <button class="general-button">登録</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="copyright">
+            &copy; 2024 MyWebsite. All Rights Reserved.
+        </div>
+    </footer>
+    <script src="/top.js"></script>
+</body>
+
+</html>
